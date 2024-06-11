@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY web.html /usr/share/nginx/html/web.html
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 50345
 
 # Start Nginx when the container has provisioned.
 CMD ["nginx", "-g", "daemon off;"]
